@@ -5,6 +5,7 @@
     "sdk" : "org.gnome.Sdk",
     "command" : "swell-foop",
     "rename-icon" : "swell-foop",
+    "copy-icon": true,
     "rename-desktop-file" : "swell-foop.desktop",
     "rename-appdata-file" : "swell-foop.appdata.xml",
     "finish-args" : [
