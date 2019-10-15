@@ -1,20 +1,14 @@
 {
     "app-id" : "org.gnome.SwellFoop",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.32",
+    "runtime-version" : "3.34",
     "sdk" : "org.gnome.Sdk",
     "command" : "swell-foop",
     "finish-args" : [
         "--share=ipc",
         "--socket=x11",
         "--socket=wayland",
-        "--device=dri",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
-    ],
-    "cleanup": [
+        "--device=dri"
     ],
     "modules" : [
         {
@@ -23,8 +17,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/swell-foop/3.32/swell-foop-3.32.0.tar.xz",
-                    "sha256" : "91ddc86b6d003e5755004004c74584531b1328cb604883b0deeb7b1ed888ec4a"
+                    "url" : "https://download.gnome.org/sources/swell-foop/3.34/swell-foop-3.34.1.tar.xz",
+                    "sha256" : "61c6b6ff9047c00bdc0dbe11a880058a5462921c702123a2d6d1a652bbbe6280"
                 }
             ]
         }
