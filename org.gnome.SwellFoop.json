@@ -19,6 +19,10 @@
                     "type" : "archive",
                     "url" : "https://download.gnome.org/sources/swell-foop/3.34/swell-foop-3.34.1.tar.xz",
                     "sha256" : "61c6b6ff9047c00bdc0dbe11a880058a5462921c702123a2d6d1a652bbbe6280"
+                },
+                {
+                    "type": "patch",
+                    "path": "appdata_release_tag.patch"
                 }
             ]
         }
