@@ -1,12 +1,12 @@
 {
     "app-id" : "org.gnome.SwellFoop",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.36",
+    "runtime-version" : "40",
     "sdk" : "org.gnome.Sdk",
     "command" : "swell-foop",
     "finish-args" : [
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri"
     ],
@@ -17,12 +17,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/swell-foop/3.34/swell-foop-3.34.1.tar.xz",
-                    "sha256" : "61c6b6ff9047c00bdc0dbe11a880058a5462921c702123a2d6d1a652bbbe6280"
-                },
-                {
-                    "type": "patch",
-                    "path": "appdata_release_tag.patch"
+                    "url" : "https://download.gnome.org/sources/swell-foop/40/swell-foop-40.1.tar.xz",
+                    "sha256" : "c1070d8a88fa43dc56a85e8bba07e9d89d8f8898cf9ed6b838e81f8d1e58249f"
                 }
             ]
         }
