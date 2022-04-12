@@ -26,8 +26,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/swell-foop/41/swell-foop-41.0.1.tar.xz",
-                    "sha256" : "6042ff313c6c87d564827c703696b3b209136c3fc39fe264a6efa4e3059383d8"
+                    "url" : "https://download.gnome.org/sources/swell-foop/41/swell-foop-41.1.tar.xz",
+                    "sha256" : "243f7a55e5e753a51086eec2568320d7692d5b15a66a723ab591705e0d8ef6dd"
                 }
             ]
         }
