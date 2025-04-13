@@ -1,9 +1,8 @@
 {
-    "app-id" : "org.gnome.SwellFoop",
+    "id" : "org.gnome.SwellFoop",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "48",
     "sdk" : "org.gnome.Sdk",
-    "sdk-extensions": [ "org.freedesktop.Sdk.Extension.vala" ],
     "command" : "swell-foop",
     "finish-args" : [
         "--share=ipc",
@@ -22,33 +21,21 @@
         "*.la",
         "*.a"
     ],
-    "build-options": {
-        "prepend-path": "/usr/lib/sdk/vala/bin/",
-        "prepend-ld-library-path": "/usr/lib/sdk/vala/lib"
-    },
     "modules" : [
-        {
-            "name": "libgee",
-            "buildsystem": "autotools",
-            "build-options": {
-                "env": {
-                    "ACLOCAL_PATH" : "/usr/lib/sdk/vala/share/aclocal"
-                }
-            },
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/libgee/0.20/libgee-0.20.6.tar.xz",
-                "sha256": "1bf834f5e10d60cc6124d74ed3c1dd38da646787fbf7872220b8b4068e476d4d"
-            }]
-        },
         {
             "name": "libgnome-games-support",
             "buildsystem": "meson",
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/libgnome-games-support/2.0/libgnome-games-support-2.0.0.tar.xz",
-                "sha256": "53821f6fe32eddcb9eef3324f646aaac83cc6d3de0937dfd5f266470d453d2a4"
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgnome-games-support/2.0/libgnome-games-support-2.0.1.tar.xz",
+                    "sha256": "0186f25c4892c86c7eac43a307fc19db696df4f19aca7f54e83c221df9d9790a",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libgnome-games-support"
+                    }
+                }
+            ]
         },
         {
             "name" : "swell-foop",
@@ -56,8 +43,12 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/swell-foop/46/swell-foop-46.0.tar.xz",
-                    "sha256" : "06f8ab7807d71cec948b868371f47fbadeefccb5c357e13d1ef3c8481891fca3"
+                    "url" : "https://download.gnome.org/sources/swell-foop/48/swell-foop-48.1.tar.xz",
+                    "sha256" : "5b9630878fe701aee751ed46ff765c2bcd9f815a4e5582676a3c26b31182031b",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "swell-foop"
+                    }
                 }
             ]
         }
