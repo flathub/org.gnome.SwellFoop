@@ -1,10 +1,10 @@
 {
-    "id" : "org.gnome.SwellFoop",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "swell-foop",
-    "finish-args" : [
+    "id": "org.gnome.SwellFoop",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "48",
+    "sdk": "org.gnome.Sdk",
+    "command": "swell-foop",
+    "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
@@ -21,15 +21,15 @@
         "*.la",
         "*.a"
     ],
-    "modules" : [
+    "modules": [
         {
             "name": "libgnome-games-support",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgnome-games-support/2.0/libgnome-games-support-2.0.1.tar.xz",
-                    "sha256": "0186f25c4892c86c7eac43a307fc19db696df4f19aca7f54e83c221df9d9790a",
+                    "url": "https://download.gnome.org/sources/libgnome-games-support/2.0/libgnome-games-support-2.0.2.tar.xz",
+                    "sha256": "82bbc74f08f98b833a9b6444b8479e1bd84ded0a07425d057b45f38e8783e5bd",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgnome-games-support"
@@ -38,13 +38,13 @@
             ]
         },
         {
-            "name" : "swell-foop",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "swell-foop",
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/swell-foop/48/swell-foop-48.1.tar.xz",
-                    "sha256" : "5b9630878fe701aee751ed46ff765c2bcd9f815a4e5582676a3c26b31182031b",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/swell-foop/48/swell-foop-48.1.tar.xz",
+                    "sha256": "5b9630878fe701aee751ed46ff765c2bcd9f815a4e5582676a3c26b31182031b",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "swell-foop"
