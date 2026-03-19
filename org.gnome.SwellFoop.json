@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.SwellFoop",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "swell-foop",
     "finish-args": [
@@ -12,14 +12,8 @@
     ],
     "cleanup": [
         "/include",
-        "/man",
-        "/share/aclocal",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "/share/vala",
-        "*.la",
-        "*.a"
+        "/lib/pkgconfig",
+        "/share/vala"
     ],
     "modules": [
         {
@@ -43,8 +37,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/swell-foop/48/swell-foop-48.1.tar.xz",
-                    "sha256": "5b9630878fe701aee751ed46ff765c2bcd9f815a4e5582676a3c26b31182031b",
+                    "url": "https://download.gnome.org/sources/swell-foop/50/swell-foop-50.0.tar.xz",
+                    "sha256": "96b243023e0d4a66f986bc2968b0f0b86618e15a55f97e83fe6ab009e7e782eb",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "swell-foop"
